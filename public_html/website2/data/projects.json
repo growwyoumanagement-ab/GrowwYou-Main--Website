@@ -1,0 +1,436 @@
+{
+  "about": {
+    "bio": "From crafting pixel-perfect interfaces to engineering scalable cloud architectures, I transform ideas into immersive digital realities. With expertise spanning SaaS platforms, mobile applications, web experiences, and digital marketing, I bring a holistic approach to every project.",
+    "name": "Groww You",
+    "social": {
+      "email": "hello@nitin.dev",
+      "github": "https://github.com/nitin",
+      "instagram": "https://instagram.com/nitin",
+      "linkedin": "https://linkedin.com/in/nitin",
+      "twitter": "https://twitter.com/nitin"
+    },
+    "tagline": "We Build Digital Experiences That Move People",
+    "title": "Full-Stack Developer & Digital Architect"
+  },
+  "genesis_milestones": [
+    {
+      "text": "First Line of Code",
+      "year": "THE BEGINNING"
+    },
+    {
+      "text": "Full-Stack Mastery",
+      "year": "GROWTH"
+    },
+    {
+      "text": "Digital Architect",
+      "year": "EVOLUTION"
+    },
+    {
+      "text": "Building the Future",
+      "year": "NOW"
+    }
+  ],
+  "genesis_text": {
+    "large_text": "Every great creation starts with a single spark of imagination.",
+    "paragraph_1": "What began as curiosity about how things work evolved into a passion for building digital experiences that push boundaries. From writing my first line of code to architecting complex systems that serve millions \u2014 the journey has been nothing short of extraordinary.",
+    "paragraph_2": "Today, I stand at the intersection of <span class=\"highlight\">design</span>, <span class=\"highlight\">technology</span>, and <span class=\"highlight\">strategy</span> \u2014 crafting solutions that don't just work, but inspire."
+  },
+  "marketing": {
+    "case_studies": [
+      {
+        "description": "Took a new DTC brand from 0 to $1M in revenue within 6 months through integrated social media and SEO strategy.",
+        "result": "1000% ROI",
+        "title": "E-commerce Brand Launch"
+      },
+      {
+        "description": "Scaled a B2B SaaS from 1K to 50K users through content marketing, SEO, and strategic partnerships.",
+        "result": "4900% user growth",
+        "title": "SaaS Growth Hacking"
+      },
+      {
+        "description": "Achieved #1 Google rankings for 200+ local keywords for a chain of retail stores across 15 cities.",
+        "result": "300% increase in foot traffic",
+        "title": "Local Business Domination"
+      }
+    ],
+    "services": [
+      "Social Media Marketing",
+      "Search Engine Optimization",
+      "Content Strategy",
+      "Brand Identity Design",
+      "Performance Marketing",
+      "Email Marketing Automation"
+    ],
+    "stats": [
+      {
+        "label": "Clients Served",
+        "suffix": "+",
+        "value": 150
+      },
+      {
+        "label": "Revenue Generated",
+        "prefix": "$",
+        "suffix": "M+",
+        "value": 5
+      },
+      {
+        "label": "Social Followers Grown",
+        "suffix": "M+",
+        "value": 2
+      },
+      {
+        "label": "First Page Rankings",
+        "suffix": "+",
+        "value": 500
+      },
+      {
+        "label": "Campaigns Launched",
+        "suffix": "+",
+        "value": 300
+      },
+      {
+        "label": "Average ROI",
+        "suffix": "%",
+        "value": 340
+      }
+    ]
+  },
+  "mobile": [
+    {
+      "description": "",
+      "downloads": "",
+      "id": "mobile-1775327259241",
+      "images": [
+        "/static/images/uploads/6f873443_1771581114311.jpg",
+        "/static/images/uploads/650c981d_1771581114325.jpg",
+        "/static/images/uploads/ecb60a83_1771581114334.jpg",
+        "/static/images/uploads/85ed2385_1771581114342.jpg",
+        "/static/images/uploads/8559836d_1771581114350.jpg",
+        "/static/images/uploads/38543203_1771581114358.jpg",
+        "/static/images/uploads/138a770c_1771581114366.jpg",
+        "/static/images/uploads/d2d2677f_1771581114375.jpg"
+      ],
+      "platform": "iOS & Android",
+      "tech_stack": [],
+      "title": "New mobile",
+      "url": "#"
+    },
+    {
+      "description": "AI-powered fitness companion app with real-time pose detection, personalized workout plans, nutrition tracking, and social challenges. Winner of Google Play Best App 2024.",
+      "downloads": "500K+",
+      "featured": true,
+      "id": "mobile-1",
+      "images": [
+        "/static/images/projects/mobile-1.jpg"
+      ],
+      "platform": "iOS & Android",
+      "tech_stack": [
+        "Flutter",
+        "Dart",
+        "Firebase",
+        "TensorFlow Lite"
+      ],
+      "title": "FitPulse",
+      "url": "https://example.com/fitpulse"
+    },
+    {
+      "description": "Meditation and mental wellness app featuring binaural beats, guided journaling, mood tracking with AI insights, and a global community of mindfulness practitioners.",
+      "downloads": "200K+",
+      "featured": true,
+      "id": "mobile-2",
+      "images": [
+        "/static/images/projects/mobile-2.jpg"
+      ],
+      "platform": "iOS & Android",
+      "tech_stack": [
+        "React Native",
+        "Node.js",
+        "MongoDB",
+        "AWS"
+      ],
+      "title": "MindSpace",
+      "url": "https://example.com/mindspace"
+    },
+    {
+      "description": "Hyperlocal grocery delivery app with 15-minute delivery promise. Features real-time inventory, smart route optimization, and a seamless checkout experience.",
+      "downloads": "1M+",
+      "featured": false,
+      "id": "mobile-3",
+      "images": [
+        "/static/images/projects/mobile-3.jpg"
+      ],
+      "platform": "iOS & Android",
+      "tech_stack": [
+        "Kotlin",
+        "Swift",
+        "Go",
+        "PostgreSQL",
+        "Redis"
+      ],
+      "title": "QuickCart",
+      "url": "https://example.com/quickcart"
+    },
+    {
+      "description": "Music discovery app that uses AI to create infinite personalized radio stations based on your mood, activity, and listening patterns.",
+      "downloads": "100K+",
+      "featured": false,
+      "id": "mobile-4",
+      "images": [
+        "/static/images/projects/mobile-4.jpg"
+      ],
+      "platform": "iOS & Android",
+      "tech_stack": [
+        "Flutter",
+        "Python",
+        "FastAPI",
+        "Spotify API"
+      ],
+      "title": "SoundScape",
+      "url": "https://example.com/soundscape"
+    }
+  ],
+  "portfolios": [
+    {
+      "description": "",
+      "id": "portfolios-1775327272437",
+      "images": [
+        "/static/images/placeholder.jpg"
+      ],
+      "tech_stack": [],
+      "title": "New portfolios",
+      "url": "#"
+    },
+    {
+      "description": "Cinematic portfolio for a creative director featuring scroll-driven storytelling, dynamic video backgrounds, and morphing typography.",
+      "featured": true,
+      "id": "portfolio-1",
+      "images": [
+        "/static/images/projects/portfolio-1.jpg"
+      ],
+      "tech_stack": [
+        "HTML",
+        "CSS",
+        "GSAP",
+        "Three.js"
+      ],
+      "title": "Creative Director Portfolio",
+      "url": "https://example.com/creative-dir"
+    },
+    {
+      "description": "Immersive photography portfolio with full-screen masonry grid, lightbox with gesture controls, and an infinite scroll gallery powered by lazy loading.",
+      "featured": true,
+      "id": "portfolio-2",
+      "images": [
+        "/static/images/projects/portfolio-2.jpg"
+      ],
+      "tech_stack": [
+        "Next.js",
+        "Framer Motion",
+        "Cloudinary"
+      ],
+      "title": "Photographer Showreel",
+      "url": "https://example.com/photog"
+    },
+    {
+      "description": "WebGL-powered portfolio for a 3D artist with interactive model viewers, turntable animations, and a custom material editor preview.",
+      "featured": false,
+      "id": "portfolio-3",
+      "images": [
+        "/static/images/projects/portfolio-3.jpg"
+      ],
+      "tech_stack": [
+        "React Three Fiber",
+        "Drei",
+        "Blender"
+      ],
+      "title": "3D Artist Showcase",
+      "url": "https://example.com/3dartist"
+    }
+  ],
+  "saas": [
+    {
+      "description": "",
+      "id": "saas-1775327237668",
+      "images": [
+        "/static/images/uploads/e0857dc8_Gemini_Generated_Image_b8xho9b8xho9b8xh.png",
+        "/static/images/uploads/9eaad0df_Gemini_Generated_Image_f5xvomf5xvomf5xv.png",
+        "/static/images/uploads/fb1593dc_Gemini_Generated_Image_gq28p6gq28p6gq28.png",
+        "/static/images/uploads/9b4af8da_Gemini_Generated_Image_l4drfil4drfil4dr.png"
+      ],
+      "metrics": "",
+      "tech_stack": [],
+      "title": "New saas",
+      "url": "#"
+    },
+    {
+      "description": "Enterprise-grade cloud synchronization platform with real-time collaboration, version control, and intelligent conflict resolution. Built to handle millions of concurrent users.",
+      "featured": true,
+      "id": "saas-1",
+      "images": [
+        "/static/images/projects/saas-1.jpg"
+      ],
+      "metrics": "50K+ active users",
+      "tech_stack": [
+        "Python",
+        "React",
+        "PostgreSQL",
+        "Redis",
+        "Docker"
+      ],
+      "title": "CloudSync Pro",
+      "url": "https://example.com/cloudsync"
+    },
+    {
+      "description": "AI-powered business analytics dashboard that transforms raw data into actionable insights. Features predictive modeling, custom report builder, and automated alert systems.",
+      "featured": true,
+      "id": "saas-2",
+      "images": [
+        "/static/images/projects/saas-2.jpg"
+      ],
+      "metrics": "10M+ data points processed daily",
+      "tech_stack": [
+        "Python",
+        "Django",
+        "TensorFlow",
+        "D3.js",
+        "AWS"
+      ],
+      "title": "AnalytIQ Dashboard",
+      "url": "https://example.com/analytiq"
+    },
+    {
+      "description": "Workflow automation platform that lets businesses design, execute, and monitor complex multi-step processes without code. Integrates with 200+ services.",
+      "featured": false,
+      "id": "saas-3",
+      "images": [
+        "/static/images/projects/saas-3.jpg"
+      ],
+      "metrics": "1M+ automations triggered",
+      "tech_stack": [
+        "Node.js",
+        "Vue.js",
+        "MongoDB",
+        "RabbitMQ",
+        "Kubernetes"
+      ],
+      "title": "TaskFlow Engine",
+      "url": "https://example.com/taskflow"
+    },
+    {
+      "description": "Zero-knowledge encrypted file storage and sharing platform for enterprises. Military-grade encryption with intuitive team collaboration features.",
+      "featured": false,
+      "id": "saas-4",
+      "images": [
+        "/static/images/projects/saas-4.jpg"
+      ],
+      "metrics": "99.99% uptime SLA",
+      "tech_stack": [
+        "Rust",
+        "React",
+        "WebAssembly",
+        "PostgreSQL"
+      ],
+      "title": "SecureVault",
+      "url": "https://example.com/securevault"
+    }
+  ],
+  "team": [
+    {
+      "bio": "Passionate about building scalable digital experiences.",
+      "id": "team-1",
+      "images": [
+        "/static/images/uploads/3fafc7cf_titu.avif"
+      ],
+      "name": "John Doe",
+      "role": "Lead Architect"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "testimonials-1775369215222",
+      "images": [
+        "/static/images/uploads/132a5fbe_Gemini_Generated_Image_b8xho9b8xho9b8xh.png"
+      ],
+      "name": "Client Name",
+      "role": "CEO / Company",
+      "review": "vjhbkjnlkoobhjghmgv,jhb.kjnlkm;mlkhjvgh fgfhjyuhoijpojhfmmh,jyuipo fhgj.hk/lijghfhgjhkulihg fhgj.hkkhjghfhgjkukhg vbgjhkhgcbgjhku fhgjhhgjfchjghkuh fhgyigjgjhuo fhhgigjfjgkhcfjghggv ftugfhjgb gdfuyighfcvhjlnb gg.khb gyhghjnb ",
+      "rating": 5
+    }
+  ],
+  "websites": [
+    {
+      "description": "",
+      "id": "websites-1775327266266",
+      "images": [
+        "/static/images/placeholder.jpg"
+      ],
+      "tech_stack": [],
+      "title": "New websites",
+      "url": "#"
+    },
+    {
+      "description": "Award-winning interior design studio website with immersive 3D room tours, before/after sliders, and an AI room visualizer that lets clients preview designs in their own spaces.",
+      "featured": true,
+      "id": "web-1",
+      "images": [
+        "/static/images/projects/web-1.jpg"
+      ],
+      "tech_stack": [
+        "Next.js",
+        "Three.js",
+        "Sanity CMS",
+        "Vercel"
+      ],
+      "title": "Luxe Interiors",
+      "url": "https://example.com/luxe"
+    },
+    {
+      "description": "Dynamic event website for a 3-day music festival featuring an interactive lineup explorer, real-time stage schedules, and a WebGL-powered visual experience.",
+      "featured": true,
+      "id": "web-2",
+      "images": [
+        "/static/images/projects/web-2.jpg"
+      ],
+      "tech_stack": [
+        "Astro",
+        "GSAP",
+        "WebGL",
+        "Supabase"
+      ],
+      "title": "Nova Music Festival",
+      "url": "https://example.com/nova"
+    },
+    {
+      "description": "E-commerce platform for premium artisan coffee with subscription management, bean origin storytelling, interactive flavor profiles, and a brew guide library.",
+      "featured": false,
+      "id": "web-3",
+      "images": [
+        "/static/images/projects/web-3.jpg"
+      ],
+      "tech_stack": [
+        "Shopify",
+        "Liquid",
+        "JavaScript",
+        "Stripe"
+      ],
+      "title": "Artisan Coffee Co.",
+      "url": "https://example.com/artisan"
+    },
+    {
+      "description": "Architectural visualization firm's portfolio with WebGL-powered 3D model viewers, interactive floor plans, and cinematic project walkthroughs.",
+      "featured": false,
+      "id": "web-4",
+      "images": [
+        "/static/images/projects/web-4.jpg"
+      ],
+      "tech_stack": [
+        "React",
+        "Three.js",
+        "Blender",
+        "Cloudflare"
+      ],
+      "title": "ArchViz Studio",
+      "url": "https://example.com/archviz"
+    }
+  ]
+}

@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitin — Digital Architect | Immersive Portfolio</title>
+    <meta name="description"
+        content="Explore the immersive portfolio of Nitin — Full-Stack Developer & Digital Architect. SaaS products, mobile apps, websites, and digital marketing excellence.">
+    <meta name="keywords" content="portfolio, developer, SaaS, mobile apps, web development, digital marketing, SEO">
+    <meta name="author" content="Nitin">
+    <meta property="og:title" content="Nitin — Digital Architect">
+    <meta property="og:description" content="An immersive journey through digital craftsmanship">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#0a0a0f">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         LOADING SCREEN
+         ═══════════════════════════════════════════════════════════════════════ -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <svg viewBox="0 0 100 100" class="loader-ring">
+                    <circle cx="50" cy="50" r="45" class="loader-ring-bg" />
+                    <circle cx="50" cy="50" r="45" class="loader-ring-fill" />
+                </svg>
+                <span class="loader-percentage">0</span>
+            </div>
+            <div class="loader-text">
+                <span class="loader-label">Initializing Experience</span>
+                <div class="loader-bar">
+                    <div class="loader-bar-fill"></div>
+                </div>
+            </div>
+            <p class="loader-hint">Crafting your journey...</p>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         CUSTOM CURSOR
+         ═══════════════════════════════════════════════════════════════════════ -->
+    <div id="custom-cursor" class="custom-cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-ring"></div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         THREE.JS CANVAS
+         ═══════════════════════════════════════════════════════════════════════ -->
+    <canvas id="webgl-canvas"></canvas>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         CHAPTER NAVIGATION (Side Dots)
+         ═══════════════════════════════════════════════════════════════════════ -->
+    <nav id="chapter-nav" class="chapter-nav" aria-label="Story chapters">
+        <div class="nav-line"></div>
+        <button class="nav-dot active" data-chapter="0" aria-label="The Void">
+            <span class="nav-dot-inner"></span>
+            <span class="nav-label">The Void</span>
+        </button>
+        <button class="nav-dot" data-chapter="1" aria-label="Genesis">
+            <span class="nav-dot-inner"></span>
+            <span class="nav-label">Genesis</span>
+        </button>
+        <button class="nav-dot" data-chapter="2" aria-label="The Builder">
+            <span class="nav-dot-inner"></span>
+            <span class="nav-label">The Builder</span>
+        </button>
+        <button class="nav-dot" data-chapter="3" aria-label="Mobile Worlds">
+            <span class="nav-dot-inner"></span>
+            <span class="nav-label">Mobile Worlds</span>
+        </button>
+        <button class="nav-dot" data-chapter="4" aria-label="Web Weaver">
+            <span class="nav-dot-inner"></span>
+            <span class="nav-label">Web Weaver</span>
+        </button>
+        <button class="nav-dot" data-chapter="5" aria-label="The Amplifier">
+            <span class="nav-dot-inner"></span>
+            <span class="nav-label">The Amplifier</span>
+        </button>
+        <button class="nav-dot" data-chapter="6" aria-label="The Collective">
+            <span class="nav-dot-inner"></span>
+            <span class="nav-label">The Collective</span>
+        </button>
+        <button class="nav-dot" data-chapter="7" aria-label="Voices of Success">
+            <span class="nav-dot-inner"></span>
+            <span class="nav-label">Voices of Success</span>
+        </button>
+        <button class="nav-dot" data-chapter="8" aria-label="Connect">
+            <span class="nav-dot-inner"></span>
+            <span class="nav-label">Connect</span>
+        </button>
+    </nav>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         SCROLL INDICATOR
+         ═══════════════════════════════════════════════════════════════════════ -->
+    <div id="scroll-indicator" class="scroll-indicator">
+        <div class="scroll-mouse">
+            <div class="scroll-wheel"></div>
+        </div>
+        <span>Scroll to Begin</span>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         MAIN CONTENT — STORY CHAPTERS
+         ═══════════════════════════════════════════════════════════════════════ -->
+    <main id="story-container">
+
+        <!-- ── CHAPTER 0: THE VOID — Entry ──────────────────────────────── -->
+        <section id="chapter-void" class="chapter chapter-void" data-chapter="0">
+            <div class="chapter-content">
+                <div class="void-title-container">
+                    <h1 class="void-title glitch-text" data-text="{{ data.about.name }}">
+                        {{ data.about.name }}
+                    </h1>
+                    <div class="void-subtitle-line"></div>
+                    <p class="void-subtitle text-reveal">{{ data.about.title }}</p>
+                </div>
+                <p class="void-tagline text-reveal-delayed">{{ data.about.tagline }}</p>
+            </div>
+        </section>
+
+        <!-- ── CHAPTER 1: GENESIS — Origin Story ────────────────────────── -->
+        <section id="chapter-genesis" class="chapter chapter-genesis" data-chapter="1">
+            <div class="chapter-content">
+                <div class="chapter-header">
+                    <span class="chapter-number">01</span>
+                    <h2 class="chapter-title text-draw">Genesis</h2>
+                    <p class="chapter-subtitle text-reveal">The Origin Story</p>
+                </div>
+                <div class="genesis-story">
+                    <div class="story-block" data-animate="fade-up">
+                        <p class="story-text large">{{ data.genesis_text.large_text }}</p>
+                    </div>
+                    <div class="story-block" data-animate="fade-up">
+                        <p class="story-text">{{ data.genesis_text.paragraph_1 }}</p>
+                    </div>
+                    <div class="story-block" data-animate="fade-up">
+                        <p class="story-text">{{ data.genesis_text.paragraph_2 | safe }}</p>
+                    </div>
+                    <div class="genesis-milestones">
+                        {% for milestone in data.genesis_milestones %}
+                        <div class="milestone" data-animate="scale-in">
+                            <span class="milestone-year">{{ milestone.year }}</span>
+                            <span class="milestone-text">{{ milestone.text }}</span>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── CHAPTER 2: THE BUILDER — SaaS Products ───────────────────── -->
+        <section id="chapter-builder" class="chapter chapter-builder" data-chapter="2">
+            <div class="chapter-content">
+                <div class="chapter-header">
+                    <span class="chapter-number">02</span>
+                    <h2 class="chapter-title text-draw">The Builder</h2>
+                    <p class="chapter-subtitle text-reveal">SaaS Products & Platforms</p>
+                </div>
+                <p class="chapter-intro text-reveal">Architecting scalable platforms that empower businesses and
+                    transform industries.</p>
+                <div class="projects-grid saas-grid">
+                    {% for project in data.saas %}
+                    <div class="project-card holographic" data-project-id="{{ project.id }}" data-animate="hologram-in">
+                        <div class="card-glow"></div>
+                        <div class="card-border"></div>
+                        <div class="card-content">
+                            <div class="card-visual">
+                                {% if project.images and project.images|length > 0 %}
+                                <div class="phone-carousel">
+                                    {% for img in project.images %}
+                                    <div class="phone-slide">
+                                        <img src="{{ img }}" loading="lazy">
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                                {% if project.images|length > 1 %}
+                                <button class="phone-arrow prev"
+                                    onclick="event.stopPropagation(); this.parentElement.querySelector('.phone-carousel').scrollBy({left: -this.parentElement.querySelector('.phone-carousel').offsetWidth, behavior: 'smooth'})">❮</button>
+                                <button class="phone-arrow next"
+                                    onclick="event.stopPropagation(); this.parentElement.querySelector('.phone-carousel').scrollBy({left: this.parentElement.querySelector('.phone-carousel').offsetWidth, behavior: 'smooth'})">❯</button>
+                                {% endif %}
+                                {% else %}
+                                <div class="card-image-placeholder" data-project="{{ project.id }}">
+                                    <div class="placeholder-grid"></div>
+                                    <span class="placeholder-icon">⚡</span>
+                                </div>
+                                {% endif %}
+                            </div>
+                            <div class="card-info">
+                                <h3 class="card-title">{{ project.title }}</h3>
+                                <p class="card-description">{{ project.description }}</p>
+                                <div class="card-tech">
+                                    {% for tech in project.tech_stack %}
+                                    <span class="tech-tag">{{ tech }}</span>
+                                    {% endfor %}
+                                </div>
+                                <div class="card-metrics">
+                                    <span class="metric-badge">{{ project.metrics }}</span>
+                                </div>
+                                <a href="{{ project.url }}" class="card-link" target="_blank" rel="noopener">
+                                    Explore Project <span class="link-arrow">→</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-scanline"></div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <!-- ── CHAPTER 3: MOBILE WORLDS — Mobile Apps ───────────────────── -->
+        <section id="chapter-mobile" class="chapter chapter-mobile" data-chapter="3">
+            <div class="chapter-content">
+                <div class="chapter-header">
+                    <span class="chapter-number">03</span>
+                    <h2 class="chapter-title text-draw">Mobile Worlds</h2>
+                    <p class="chapter-subtitle text-reveal">Applications That Live in Your Pocket</p>
+                </div>
+                <p class="chapter-intro text-reveal">Creating mobile experiences that feel native, perform beautifully,
+                    and delight millions of users worldwide.</p>
+                <div class="mobile-showcase">
+                    {% for app in data.mobile %}
+                    <div class="phone-mockup" data-project-id="{{ app.id }}" data-animate="float-in">
+                        <div class="phone-frame">
+                            <div class="phone-notch"></div>
+                            <div class="phone-screen">
+                                {% if app.images and app.images|length > 0 %}
+                                <div class="phone-carousel">
+                                    {% for img in app.images %}
+                                    <div class="phone-slide">
+                                        <img src="{{ img }}" loading="lazy">
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                                {% if app.images|length > 1 %}
+                                <button class="phone-arrow prev"
+                                    onclick="event.stopPropagation(); this.parentElement.querySelector('.phone-carousel').scrollBy({left: -this.parentElement.querySelector('.phone-carousel').offsetWidth, behavior: 'smooth'})">❮</button>
+                                <button class="phone-arrow next"
+                                    onclick="event.stopPropagation(); this.parentElement.querySelector('.phone-carousel').scrollBy({left: this.parentElement.querySelector('.phone-carousel').offsetWidth, behavior: 'smooth'})">❯</button>
+                                {% endif %}
+                                {% else %}
+                                <div class="app-preview" data-project="{{ app.id }}">
+                                    <div class="app-gradient" style="--hue: {{ loop.index * 60 }}"></div>
+                                    <span class="app-icon">📱</span>
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                        <div class="phone-info">
+                            <h3 class="phone-title">{{ app.title }}</h3>
+                            <p class="phone-description">{{ app.description }}</p>
+                            <div class="phone-meta">
+                                <span class="platform-badge">{{ app.platform }}</span>
+                                <span class="downloads-badge">{{ app.downloads }} downloads</span>
+                            </div>
+                            <div class="card-tech">
+                                {% for tech in app.tech_stack %}
+                                <span class="tech-tag">{{ tech }}</span>
+                                {% endfor %}
+                            </div>
+                            <a href="{{ app.url }}" class="card-link" target="_blank" rel="noopener">
+                                View App <span class="link-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <!-- ── CHAPTER 4: WEB WEAVER — Websites & Portfolios ────────────── -->
+        <section id="chapter-web" class="chapter chapter-web" data-chapter="4">
+            <div class="chapter-content">
+                <div class="chapter-header">
+                    <span class="chapter-number">04</span>
+                    <h2 class="chapter-title text-draw">The Web Weaver</h2>
+                    <p class="chapter-subtitle text-reveal">Websites & Digital Portfolios</p>
+                </div>
+                <p class="chapter-intro text-reveal">Weaving immersive web experiences that captivate, convert, and
+                    leave lasting impressions.</p>
+
+                <div class="gallery-corridor">
+                    <div class="gallery-track">
+                        {% for site in data.websites %}
+                        <div class="gallery-frame" data-project-id="{{ site.id }}" data-animate="portal-in">
+                            <div class="frame-border"></div>
+                            <div class="frame-content">
+                                <div class="frame-visual" data-project="{{ site.id }}">
+                                    {% if site.images and site.images|length > 0 %}
+                                    <div class="phone-carousel">
+                                        {% for img in site.images %}
+                                        <div class="phone-slide">
+                                            <img src="{{ img }}" loading="lazy">
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                    {% if site.images|length > 1 %}
+                                    <button class="phone-arrow prev"
+                                        onclick="event.stopPropagation(); this.parentElement.querySelector('.phone-carousel').scrollBy({left: -this.parentElement.querySelector('.phone-carousel').offsetWidth, behavior: 'smooth'})">❮</button>
+                                    <button class="phone-arrow next"
+                                        onclick="event.stopPropagation(); this.parentElement.querySelector('.phone-carousel').scrollBy({left: this.parentElement.querySelector('.phone-carousel').offsetWidth, behavior: 'smooth'})">❯</button>
+                                    {% endif %}
+                                    {% else %}
+                                    <div class="frame-gradient" style="--hue: {{ loop.index * 45 + 180 }}"></div>
+                                    <span class="frame-icon">🌐</span>
+                                    {% endif %}
+                                </div>
+                                <div class="frame-info">
+                                    <h3>{{ site.title }}</h3>
+                                    <p>{{ site.description }}</p>
+                                    <div class="card-tech">
+                                        {% for tech in site.tech_stack %}
+                                        <span class="tech-tag">{{ tech }}</span>
+                                        {% endfor %}
+                                    </div>
+                                    <a href="{{ site.url }}" class="card-link" target="_blank" rel="noopener">
+                                        Visit Site <span class="link-arrow">→</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+
+                    <h3 class="gallery-subsection-title text-reveal">Portfolios Crafted</h3>
+                    <div class="gallery-track">
+                        {% for folio in data.portfolios %}
+                        <div class="gallery-frame portfolio-frame" data-project-id="{{ folio.id }}"
+                            data-animate="portal-in">
+                            <div class="frame-border"></div>
+                            <div class="frame-content">
+                                <div class="frame-visual" data-project="{{ folio.id }}">
+                                    {% if folio.images and folio.images|length > 0 %}
+                                    <div class="phone-carousel">
+                                        {% for img in folio.images %}
+                                        <div class="phone-slide">
+                                            <img src="{{ img }}" loading="lazy">
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                    {% if folio.images|length > 1 %}
+                                    <button class="phone-arrow prev"
+                                        onclick="event.stopPropagation(); this.parentElement.querySelector('.phone-carousel').scrollBy({left: -this.parentElement.querySelector('.phone-carousel').offsetWidth, behavior: 'smooth'})">❮</button>
+                                    <button class="phone-arrow next"
+                                        onclick="event.stopPropagation(); this.parentElement.querySelector('.phone-carousel').scrollBy({left: this.parentElement.querySelector('.phone-carousel').offsetWidth, behavior: 'smooth'})">❯</button>
+                                    {% endif %}
+                                    {% else %}
+                                    <div class="frame-gradient" style="--hue: {{ loop.index * 50 + 30 }}"></div>
+                                    <span class="frame-icon">🎨</span>
+                                    {% endif %}
+                                </div>
+                                <div class="frame-info">
+                                    <h3>{{ folio.title }}</h3>
+                                    <p>{{ folio.description }}</p>
+                                    <div class="card-tech">
+                                        {% for tech in folio.tech_stack %}
+                                        <span class="tech-tag">{{ tech }}</span>
+                                        {% endfor %}
+                                    </div>
+                                    <a href="{{ folio.url }}" class="card-link" target="_blank" rel="noopener">
+                                        View Portfolio <span class="link-arrow">→</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── CHAPTER 5: THE AMPLIFIER — Digital Marketing & SEO ────────── -->
+        <section id="chapter-amplifier" class="chapter chapter-amplifier" data-chapter="5">
+            <div class="chapter-content">
+                <div class="chapter-header">
+                    <span class="chapter-number">05</span>
+                    <h2 class="chapter-title text-draw">The Amplifier</h2>
+                    <p class="chapter-subtitle text-reveal">Digital Marketing & SEO Mastery</p>
+                </div>
+                <p class="chapter-intro text-reveal">Amplifying brands through data-driven marketing strategies, SEO
+                    dominance, and social media excellence.</p>
+
+                <div class="services-orbit">
+                    {% for service in data.marketing.services %}
+                    <div class="service-node" data-animate="orbit-in"
+                        style="--i: {{ loop.index0 }}; --total: {{ data.marketing.services|length }}">
+                        <span class="service-name">{{ service }}</span>
+                    </div>
+                    {% endfor %}
+                    <div class="orbit-center">
+                        <span>360°<br>Digital</span>
+                    </div>
+                </div>
+
+                <div class="stats-grid">
+                    {% for stat in data.marketing.stats %}
+                    <div class="stat-card" data-animate="counter-up">
+                        <span class="stat-value" data-target="{{ stat.value }}"
+                            data-prefix="{{ stat.prefix|default('') }}" data-suffix="{{ stat.suffix }}">0</span>
+                        <span class="stat-label">{{ stat.label }}</span>
+                    </div>
+                    {% endfor %}
+                </div>
+
+                <div class="case-studies">
+                    <h3 class="section-title text-reveal">Case Studies</h3>
+                    {% for case in data.marketing.case_studies %}
+                    <div class="case-card" data-animate="slide-in">
+                        <div class="case-result">{{ case.result }}</div>
+                        <h4 class="case-title">{{ case.title }}</h4>
+                        <p class="case-description">{{ case.description }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <!-- ── CHAPTER 6: THE COLLECTIVE — Our Team ──────────────────────── -->
+        <section id="chapter-team" class="chapter chapter-team" data-chapter="6">
+            <div class="chapter-content">
+                <div class="chapter-header">
+                    <span class="chapter-number">06</span>
+                    <h2 class="chapter-title text-draw">The Collective</h2>
+                    <p class="chapter-subtitle text-reveal">Minds Behind the Magic</p>
+                </div>
+                <p class="chapter-intro text-reveal">An ensemble of passionate creators, engineers, and digital
+                    architects pushing the boundaries of what is possible.</p>
+
+                <div class="team-grid">
+                    {% for member in data.team %}
+                    <div class="team-card holographic" data-animate="slide-in">
+                        <div class="card-glow"></div>
+                        <div class="card-border"></div>
+                        <div class="team-avatar">
+                            {% if member.images and member.images|length > 0 %}
+                            <img src="{{ member.images[0] }}" alt="{{ member.name }}" loading="lazy">
+                            {% else %}
+                            <div class="avatar-placeholder">👤</div>
+                            {% endif %}
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">{{ member.name }}</h3>
+                            <p class="team-role">{{ member.role }}</p>
+                            <p class="team-bio">{{ member.bio }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <!-- ── CHAPTER 7: TESTIMONIALS — Client Feedback ────────────────────── -->
+        <section id="chapter-testimonials" class="chapter chapter-testimonials" data-chapter="7">
+            <div class="chapter-content">
+                <div class="chapter-header">
+                    <span class="chapter-number">07</span>
+                    <h2 class="chapter-title text-draw">Voices of Success</h2>
+                    <p class="chapter-subtitle text-reveal">What Our Clients Say</p>
+                </div>
+
+                <div class="testimonial-grid">
+                    {% for testimonial in data.testimonials %}
+                    <div class="testimonial-card holographic" data-animate="slide-in">
+                        <div class="card-glow"></div>
+                        <div class="card-border"></div>
+
+                        <div class="testimonial-quote-icon">"</div>
+
+                        <p class="testimonial-review">"{{ testimonial.review }}"</p>
+
+                        <div class="testimonial-rating">
+                            {% for i in range(testimonial.rating|int) %}
+                            <span class="star">★</span>
+                            {% endfor %}
+                            {% for i in range(5 - testimonial.rating|int) %}
+                            <span class="star empty">★</span>
+                            {% endfor %}
+                        </div>
+
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">
+                                {% if testimonial.images and testimonial.images|length > 0 %}
+                                <img src="{{ testimonial.images[0] }}" alt="{{ testimonial.name }}" loading="lazy">
+                                {% else %}
+                                <div class="avatar-placeholder">👤</div>
+                                {% endif %}
+                            </div>
+                            <div class="testimonial-author-info">
+                                <h4 class="testimonial-name">{{ testimonial.name }}</h4>
+                                <p class="testimonial-role">{{ testimonial.role }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <!-- ── CHAPTER 8: CONNECT — Contact & Finale ────────────────────── -->
+        <section id="chapter-connect" class="chapter chapter-connect" data-chapter="8">
+            <div class="chapter-content">
+                <div class="chapter-header">
+                    <span class="chapter-number">08</span>
+                    <h2 class="chapter-title text-draw">Connect</h2>
+                    <p class="chapter-subtitle text-reveal">Let's Create Something Extraordinary</p>
+                </div>
+
+                <div class="connect-layout">
+                    <div class="connect-message">
+                        <p class="connect-text text-reveal">Every great project starts with a conversation. Whether you
+                            need a scalable SaaS platform, a stunning mobile app, a captivating website, or a growth
+                            strategy that delivers results — I'm here to make it happen.</p>
+
+                        <div class="social-orbit">
+                            <a href="{{ data.about.social.github }}" class="social-satellite" data-platform="github"
+                                target="_blank" rel="noopener" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </a>
+                            <a href="{{ data.about.social.linkedin }}" class="social-satellite" data-platform="linkedin"
+                                target="_blank" rel="noopener" aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </a>
+                            <a href="{{ data.about.social.twitter }}" class="social-satellite" data-platform="twitter"
+                                target="_blank" rel="noopener" aria-label="Twitter/X">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                </svg>
+                            </a>
+                            <a href="{{ data.about.social.instagram }}" class="social-satellite"
+                                data-platform="instagram" target="_blank" rel="noopener" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                                </svg>
+                            </a>
+                            <a href="mailto:{{ data.about.social.email }}" class="social-satellite"
+                                data-platform="email" aria-label="Email">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <form id="contact-form" class="contact-form" data-animate="form-reveal">
+                        <div class="form-group">
+                            <input type="text" id="contact-name" name="name" required autocomplete="name"
+                                placeholder=" ">
+                            <label for="contact-name">Your Name</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="contact-email" name="email" required autocomplete="email"
+                                placeholder=" ">
+                            <label for="contact-email">Your Email</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="contact-subject" name="subject" placeholder=" ">
+                            <label for="contact-subject">Subject</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="contact-message" name="message" required rows="4" placeholder=" "></textarea>
+                            <label for="contact-message">Your Message</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <button type="submit" id="contact-submit" class="submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+                                </svg>
+                            </span>
+                            <div class="btn-glow"></div>
+                        </button>
+                        <div id="form-status" class="form-status"></div>
+                    </form>
+                </div>
+
+                <div class="finale-text">
+                    <p class="text-draw-large">The story continues...</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         PROJECT DETAIL MODAL
+         ═══════════════════════════════════════════════════════════════════════ -->
+    <div id="project-modal" class="project-modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <div class="modal-body">
+                <div class="modal-visual"></div>
+                <div class="modal-info">
+                    <h3 class="modal-title"></h3>
+                    <p class="modal-description"></p>
+                    <div class="modal-tech"></div>
+                    <a class="modal-link" href="#" target="_blank" rel="noopener">Visit Project →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         SCRIPTS
+         ═══════════════════════════════════════════════════════════════════════ -->
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- GSAP + Plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+
+    <!-- App Modules -->
+    <script src="{{ url_for('static', filename='js/scene.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/particles.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/morphing.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/typography.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/story.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/interactions.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>

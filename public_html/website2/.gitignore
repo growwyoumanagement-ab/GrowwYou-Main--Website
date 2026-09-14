@@ -1,0 +1,25 @@
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Backups and Local State
+*.bak
+data/submissions.json
+migrate_to_mongo.py
+migrate.py
+
+# Vercel
+.vercel/
+
+# OS generated files
+.DS_Store
+Thumbs.db
