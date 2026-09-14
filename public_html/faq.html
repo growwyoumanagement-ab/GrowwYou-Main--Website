@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ | Groww You</title>
+    <link rel="shortcut icon" href="assets/images/grwu.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+     <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <!-- Logo -->
+            <a href="/" class="logo font-heading">
+                Groww <span class="highlight ">You</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <ul class="nav-links">
+                <li><a href="/" class="nav-link hover-scale">Home</a></li>
+                <li><a href="/about" class="nav-link hover-scale">About Us</a></li>
+                <li class="services-dropdown">
+                    <a href="/services" class="nav-link hover-scale">
+                        Services
+                        <svg class="dropdown-icon" viewBox="0 0 24 24" width="16" height="16">
+                            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <div class="dropdown-content">
+                        <div class="service-category">
+                            <h4>Digital Marketing</h4>
+                            <ul>
+                                <li><a href="/services/seo-sem">SEO & SEM</a></li>
+                                <li><a href="/services/social-media-marketing">Social Media Marketing</a></li>
+                                <li><a href="/services/google-meta-ads">Google & Meta Ads</a></li>
+                                <li><a href="/services/branding-strategy">Branding & Strategy</a></li>
+                            </ul>
+                        </div>
+                        <div class="service-category">
+                            <h4>Website Development</h4>
+                            <ul>
+                                <li><a href="/services/custom-code-website">Custom Code Website</a></li>
+                                <li><a href="/services/wordpress-website">WordPress Website</a></li>
+                                <li><a href="/services/shopify-website">Shopify Website</a></li>
+                                <li><a href="/services/landing-pages">Landing Pages</a></li>
+                            </ul>
+                        </div>
+                        <div class="service-category">
+                            <h4>Software Development</h4>
+                            <ul>
+                                <li><a href="/services/web-applications">Web Applications</a></li>
+                                <li><a href="/services/erp-crm">ERP & CRM Solutions</a></li>
+                            </ul>
+                        </div>
+                        <div class="service-category">
+                            <h4>Mobile Apps</h4>
+                            <ul>
+                                <li><a href="/services/ios-app-development">iOS App Development</a></li>
+                                <li><a href="/services/android-app-development">Android App Development</a></li>
+                                <li><a href="/services/hybrid-apps">Hybrid Apps</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <!-- Why Groww You Dropdown -->
+                <li class="services-dropdown">
+                    <a href="/why-groww-you" class="nav-link hover-scale">
+                        Why Groww You
+                        <svg class="dropdown-icon" viewBox="0 0 24 24" width="16" height="16">
+                            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <div class="dropdown-content">
+                        <div class="service-category">
+                            <h4>Resources</h4>
+                            <ul>
+                            <li><a href="/blog">Blogs</a></li>
+                            <li><a href="/faq">FAQ</a></li>
+                            <li><a href="/interview">The Interview</a></li>
+                            <li><a href="/our-team">Our Team</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- Existing Portfolio Link -->
+                <li><a href="/portfolio" class="nav-link hover-scale">Portfolio</a></li>
+                <li><a href="/contact" class="nav-link hover-scale">Contact Us</a></li>
+                <li><a href="/contact" class="btn btn-primary hover-glow animate-bounce-in">Let's Grow</a></li>
+            </ul>
+
+            <!-- Mobile Navigation Menu -->
+            <div class="mobile-nav-overlay">
+                <div class="mobile-nav-content">
+                    <div class="mobile-nav-header">
+                        <div class="mobile-logo">
+                            <span class="font-heading">Groww <span class="highlight animate-shimmer">You</span></span>
+                        </div>
+                        <button class="mobile-nav-close">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path d="m18 6-12 12"></path>
+                                <path d="m6 6 12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <nav class="mobile-nav-menu">
+                        <a href="/" class="mobile-nav-item">
+                            <span class="mobile-nav-text">Home</span>
+                        </a>
+                        
+                        <a href="/about" class="mobile-nav-item">
+                            <span class="mobile-nav-text">About Us</span>
+                        </a>
+                        
+                        <div class="mobile-nav-item mobile-services-dropdown">
+                            <div class="mobile-nav-trigger">
+                                <span class="mobile-nav-text">Services</span>
+                                <svg class="mobile-dropdown-icon" viewBox="0 0 24 24" width="20" height="20">
+                                    <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
+                            </div>
+                            <div class="mobile-services-content">
+                                <div class="mobile-service-category">
+                                    <h4>Digital Marketing</h4>
+                                    <a href="/services/seo-sem">SEO & SEM</a>
+                                    <a href="/services/social-media-marketing">Social Media Marketing</a>
+                                    <a href="/services/google-meta-ads">Google & Meta Ads</a>
+                                    <a href="/services/branding-strategy">Branding & Strategy</a>
+                                </div>
+                                <div class="mobile-service-category">
+                                    <h4>Website Development</h4>
+                                    <a href="/services/custom-code-website">Custom Code Website</a>
+                                    <a href="/services/wordpress-website">WordPress Website</a>
+                                    <a href="/services/shopify-website">Shopify Website</a>
+                                    <a href="/services/landing-pages">Landing Pages</a>
+                                </div>
+                                <div class="mobile-service-category">
+                                    <h4>Software Development</h4>
+                                    <a href="/services/web-applications">Web Applications</a>
+                                    <a href="/services/erp-crm">ERP & CRM Solutions</a>
+                                </div>
+                                <div class="mobile-service-category">
+                                    <h4>Mobile Apps</h4>
+                                    <a href="/services/ios-app-development">iOS App Development</a>
+                                    <a href="/services/android-app-development">Android App Development</a>
+                                    <a href="/services/hybrid-apps">Hybrid Apps</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Why Groww You Mobile Dropdown -->
+                        <div class="mobile-nav-item mobile-services-dropdown">
+                            <div class="mobile-nav-trigger">
+                                <span class="mobile-nav-text">Why Groww You</span>
+                                <svg class="mobile-dropdown-icon" viewBox="0 0 24 24" width="20" height="20">
+                                    <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
+                            </div>
+                            <div class="mobile-services-content">
+                                <div class="mobile-service-category">
+                                    <a href="/blog">Blogs</a>
+                                    <a href="/faq">FAQ</a>
+                                    <a href="/interview">The Interview</a>
+                                    <a href="/our-team">Our Team</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Existing Portfolio Link -->
+                        <a href="/portfolio" class="mobile-nav-item">
+                            <span class="mobile-nav-text">Portfolio</span>
+                        </a>
+                        
+                        <a href="/contact" class="mobile-nav-item">
+                            <span class="mobile-nav-text">Contact Us</span>
+                        </a>
+                        
+                        <div class="mobile-nav-cta">
+                            <a href="/contact" class="mobile-cta-btn">Let's Grow Together</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn hover-scale animate-wiggle">
+                <svg class="icon animate-float-slow" viewBox="0 0 24 24">
+                    <line x1="4" x2="20" y1="6" y2="6"></line>
+                    <line x1="4" x2="20" y1="12" y2="12"></line>
+                    <line x1="4" x2="20" y1="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero" id="hero" style="min-height:60vh;padding-top:120px;display:flex;align-items:center;justify-content:center;">
+        <div class="container hero-content">
+            <h1 class="hero-title font-heading">Frequently Asked Questions</h1>
+            <p class="hero-subtitle">Find answers to the most common questions our clients ask.</p>
+        </div>
+    </section>
+    <!-- FAQ Section -->
+    <section id="faqs" style="padding:5rem 1rem;">
+        <div class="container">
+            <div class="text-center" style="margin-bottom:3rem;">
+                <h2 class="font-heading">Frequently Asked Questions by Service</h2>
+                <p style="color:var(--muted-foreground);max-width:40rem;margin:0 auto;">Select the category that matches your interest to quickly find helpful information.</p>
+            </div>
+            <div class="faq-category" style="margin-bottom:3rem;">
+                <h3 class="font-heading" style="color:var(--primary);margin-bottom:1rem;">Digital Marketing &amp; SEO</h3>
+                <details open>
+                    <summary>What is digital marketing and how can it help grow my company?</summary>
+                    <p>Digital marketing uses channels like search engines, social media, email and online ads to connect your brand with the right people. Done correctly, it increases visibility, qualified leads and revenue. Explore our <a href="/digital-marketing">digital marketing services</a> to see how we can create a tailored growth plan for your business.</p>
+                </details>
+                <details>
+                    <summary>How long does it take to see SEO results?</summary>
+                    <p>SEO is a long-term investment. Most websites start to see meaningful improvements in visibility and traffic within 3&ndash;6 months, depending on competition, website health and content quality. Highly competitive industries may take longer. For a deeper breakdown, review our <a href="/services/seo-sem">SEO plans &amp; timelines</a>.</p>
+                </details>
+                <details>
+                    <summary>Is it better to focus on organic SEO or Google Ads?</summary>
+                    <p>They work best together. Organic SEO builds long-term authority and stable traffic, while Google Ads brings instant, targeted visitors and quick testing opportunities. We typically recommend a balanced strategy based on your goals and budget. Learn more on our <a href="/services/google-meta-ads">Google Ads management</a> page.</p>
+                </details>
+                <details>
+                    <summary>How do you measure marketing performance?</summary>
+                    <p>We monitor key performance indicators (KPIs) such as website traffic, leads, conversions, cost per lead, return on ad spend (ROAS) and click-through rate (CTR). You receive clear reports and insights so you always know what is working. You can also explore our analytics and reporting approach in our <a href="/services/seo-sem">Analytics &amp; Insights</a> service.</p>
+                </details>
+                <details>
+                    <summary>Do you manage advertising campaigns and social media content?</summary>
+                    <p>Yes. Our team handles end-to-end campaign management &mdash; from strategy and ad creation to optimization, as well as social media calendars, content creation and publishing. Discover more in our <a href="/services/social-media-marketing">social media marketing services</a>.</p>
+                </details>
+                <details>
+                    <summary>Do you offer local SEO services for small and local businesses?</summary>
+                    <p>Absolutely. We optimize your Google Business Profile, local citations, reviews and location-based keywords so nearby customers can easily find you. Local SEO is ideal for clinics, restaurants, retailers and service businesses that rely on foot traffic or local leads.</p>
+                </details>
+            </div>
+
+            <div class="faq-category" style="margin-bottom:3rem;">
+                <h3 class="font-heading" style="color:var(--primary);margin-bottom:1rem;">Website Development</h3>
+                <details open>
+                    <summary>How long does it take to build a business website?</summary>
+                    <p>For a typical business website, the timeline is usually 2&ndash;4 weeks, depending on design complexity, features, content readiness and feedback speed. Larger or more custom projects may take longer. We share a clear project roadmap before we start.</p>
+                </details>
+                <details>
+                    <summary>Which technologies do you use for web development?</summary>
+                    <p>We work with modern technologies such as HTML, CSS, JavaScript, React, WordPress and other popular frameworks. Based on your goals, we recommend the stack that gives you stability, performance and room to grow.</p>
+                </details>
+                <details>
+                    <summary>Will my website be fast and fully responsive?</summary>
+                    <p>Yes. Every website we build is optimized for speed, mobile responsiveness and core web vitals. We follow best practices for performance optimization so your site loads quickly and delivers a smooth experience on desktop, tablet and mobile.</p>
+                </details>
+                <details>
+                    <summary>Can you redesign or revamp my existing website?</summary>
+                    <p>Yes. We can modernize your current website with a fresh UI/UX, improved structure, better content presentation and stronger performance. Our redesign process focuses on both aesthetics and measurable business results.</p>
+                </details>
+                <details>
+                    <summary>Will I be able to edit my website content myself?</summary>
+                    <p>Definitely. We usually build on user-friendly content management systems (CMS) such as WordPress so you can edit text, images, blogs and pages without needing a developer. We also guide you on the CMS options that best fit your needs.</p>
+                </details>
+                <details>
+                    <summary>Do you integrate secure payment gateways for e-commerce websites?</summary>
+                    <p>Yes. We set up secure e-commerce stores with trusted payment gateways, tax and shipping settings, and a smooth checkout experience. This includes platforms like Shopify and custom solutions, depending on your business model.</p>
+                </details>
+                <details>
+                    <summary>Where can I learn more about your web development services?</summary>
+                    <p>You can explore our full range of web development solutions, case studies and features on our <a href="website-development">Web Development Services</a> page.</p>
+                </details>
+            </div>
+
+            <div class="faq-category" style="margin-bottom:3rem;">
+                <h3 class="font-heading" style="color:var(--primary);margin-bottom:1rem;">Software Development</h3>
+                <details open>
+                    <summary>What types of software solutions do you develop?</summary>
+                    <p>We build custom software such as enterprise systems, automation tools, CRMs, ERPs and web applications tailored to your processes. Our goal is to streamline operations, reduce manual work and give you better control over your data.</p>
+                </details>
+                <details>
+                    <summary>How much does custom software development cost?</summary>
+                    <p>Cost depends on the scope: features, complexity, integrations, user roles, security requirements and ongoing support. After understanding your requirements, we share a transparent proposal and pricing estimate.</p>
+                </details>
+                <details>
+                    <summary>How long does it take to develop custom software?</summary>
+                    <p>Simpler tools can be delivered in a few weeks, while larger, enterprise-grade systems may take several months. We define milestones and timelines clearly so you always know what is being delivered and when.</p>
+                </details>
+                <details>
+                    <summary>Do you provide maintenance and support after launch?</summary>
+                    <p>Yes. We offer ongoing maintenance plans that cover updates, performance improvements, security patches, bug fixes and new feature requests, keeping your software reliable as your business grows.</p>
+                </details>
+                <details>
+                    <summary>Can the software scale with my future business needs?</summary>
+                    <p>Absolutely. We design scalable architectures so you can add new modules, users and features over time without needing to rebuild from scratch. This ensures your investment continues to support you in the long run.</p>
+                </details>
+                <details>
+                    <summary>Can you integrate the software with our existing tools?</summary>
+                    <p>Yes. We integrate with CRMs, ERPs, payment gateways and other third-party platforms through secure APIs and middleware. This allows your systems to communicate smoothly and reduces manual data entry.</p>
+                </details>
+            </div>
+
+        </div>
+    </section>
+
+<!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="footer-orb footer-orb-1"></div>
+        <div class="footer-orb footer-orb-2"></div>
+        
+        <div class="footer-content">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- Company Info -->
+                    <div class="footer-section">
+                        <h3 class="font-heading">Groww You</h3>
+                        <p>Digital Marketing & IT Solutions that nurture your business growth from roots to results.</p>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/company/growwyou-itsolutions-digitalmarketing-institute" class="social-link hover-scale animate-heartbeat" target="_blank" rel="noopener">
+                                <svg class="icon animate-float-slow" viewBox="0 0 24 24">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect width="4" height="12" x="2" y="9"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                            <a href="https://www.facebook.com/growwyouitsolutions" class="social-link hover-scale animate-heartbeat" target="_blank" rel="noopener">
+                                <svg class="icon animate-float-slow" viewBox="0 0 24 24">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/growwyou_" class="social-link hover-scale animate-heartbeat" target="_blank" rel="noopener">
+                                <svg class="icon animate-float-slow" viewBox="0 0 24 24">
+                                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                    <path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Links -->
+                    <div class="footer-section">
+                        <h4 class="font-heading" style="color: #0fff73;">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/about">About Us</a></li>
+                            <li><a href="/faq">FAQ</a></li>
+                            <li><a href="/services">Services</a></li>
+                            <li><a href="/contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Services -->
+                    <div class="footer-section">
+                        <h4 class="font-heading" style="color: #0fff73;">Services</h4>
+                        <ul class="footer-links">
+                            <li><a href="/services/seo-sem">SEO & SEM</a></li>
+                            <li><a href="/services/custom-code-website">Web Development</a></li>
+                            <li><a href="/services/branding-strategy">Branding & Strategy</a></li>
+                            <li><a href="/services/google-meta-ads">Google & Meta Ads</a></li>
+                            <li><a href="/services/social-media-marketing">Social Media</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div class="footer-section">
+                        <h4 class="font-heading" style="color: #0fff73;">Contact Us</h4>
+                        <ul class="contact-info">
+                            <li>
+                                <svg class="icon animate-float-slow" viewBox="0 0 24 24">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                <a href="mailto:info@growwyou.com">info@growwyou.com</a>
+                            </li>
+                            <li>
+                                <svg class="icon animate-float-slow" viewBox="0 0 24 24">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                                <div>
+                                    <a href="tel:9084734438">9084734438</a><br>
+                                    <a href="tel:9084734294">9084734294</a>
+                                </div>
+                            </li>
+                            <li>
+                                <svg class="icon animate-float-slow" viewBox="0 0 24 24">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>2nd floor, Block No.:C -14, Cloth Market, Shop No, 4 & 5. Near AU Small Finance Bank, Sanjay Place, Agra, Uttar Pradesh 282002</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Bottom Bar -->
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Groww You. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="/privacy-policy">Privacy Policy</a>
+                        <a href="/terms-of-service">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

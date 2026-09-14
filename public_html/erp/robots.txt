@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://growwyouerp.com/sitemap.xml

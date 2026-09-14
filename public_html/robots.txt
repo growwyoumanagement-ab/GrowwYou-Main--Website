@@ -1,0 +1,21 @@
+# Robots.txt for Groww You - Digital Marketing & IT Solutions
+# Website: https://growwyou.com
+
+User-agent: *
+Allow: /
+
+
+
+
+Disallow: /assets/
+Disallow: /.DS_Store
+Disallow: /.vscode/
+Disallow: /*.js$
+
+# Allow crawling of CSS files for better rendering in search results
+Allow: /assets/css/
+
+# Sitemap location
+Sitemap: https://growwyou.com/sitemap.xml
+
+
